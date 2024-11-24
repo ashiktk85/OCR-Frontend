@@ -11,7 +11,7 @@ function App() {
   const [backImage, setBackImage] = useState(null);
   const [isUploading, setIsUploading] = useState(false);
   const [details, setDetails] = useState({});
-  const url = import.meta.env.VITE_API_URL;
+  const url = process.env.VITE_API_URL;
 
   const handleImageUpload = (side, image) => {
     if (side === 'front') {
